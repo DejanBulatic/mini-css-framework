@@ -2,36 +2,47 @@
 .title {
   font-weight: bold;
   letter-spacing: 0.05rem;
-  font-style: 1.5rem;
+  font-size: 1.5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.titile--1 {
+.title--1 {
   @extend .title;
   margin-bottom: 1rem;
 }
-.titile--2 {
+.title--2 {
   @extend .title;
   font-size: 1.4rem;
   margin-bottom: 0.7rem;
 }
-.titile--3 {
+.title--3 {
   @extend .title;
   font-size: 1.3rem;
 }
-.titile--4 {
+.title--4 {
   @extend .title;
   font-size: 1.2rem;
 }
-.titile--5 {
+.title--5 {
   @extend .title;
   font-size: 1.1rem;
 }
-.titile--6 {
+.title--6 {
   @extend .title;
   font-size: 1rem;
 }
+
+// $j: 0;
+
+// @for $i from 1 to 7 {
+//     .title--#{$i} {
+//         @extend .title;
+//         font-size: 1.5rem-$j;
+//         $j:$j+0.1rem;
+
+//     }
+// }
 
 .ph {
   margin-top: 0.3125rem;
@@ -52,15 +63,4 @@
 }
 
 
-/*
-$j: 0;
 
-@for $i from 1 to 7 {
-    .title--#{$i} {
-        @extend .title;
-        font-size: 1.5rem-$j;
-        $j:$j+0.1rem;
-
-    }
-}
-*/

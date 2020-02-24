@@ -1,0 +1,11 @@
+$color-status: #212121;
+$color-danger: #DD2C00;
+$color-warning: #FF6D00;
+$color-info: #2962FF;
+$color-success: #15BE20;
+
+$bg-color-status: lighten($color-status, 40%);
+$bg-color-danger: lighten($color-danger, 40%);
+$bg-color-warning: lighten($color-warning, 40%);
+$bg-color-info: lighten($color-info, 40%);
+$bg-color-success: lighten($color-success, 40%);

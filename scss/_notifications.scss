@@ -1,0 +1,23 @@
+@mixin notification($color: $color-status, $bg-color: $bg-color-status) {
+  padding: 1rem 0.5rem;
+  border: 0.0625rem solid $color;
+  background-color: $bg-color;
+  color: $color;
+}
+
+.notification {
+@include notification;
+}
+
+.notification-danger {
+    @include notification($color-danger, $bg-color-danger);
+}
+.notification-warning {
+    @include notification($color-warning, $bg-color-warning);
+}
+.notification-info {
+    @include notification($color-info, $bg-color-info);
+}
+.notification-success {
+    @include notification($color-success, $bg-color-success);
+}
