@@ -1,0 +1,15 @@
+@mixin flexcolumn($col) {
+    flex-basis: 100%/12*$col;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+@for $i from 1 to 13 {
+    .flex__col#{$i} {
+        @include flexcolumn($i);
+    }
+}
